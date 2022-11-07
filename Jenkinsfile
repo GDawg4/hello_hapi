@@ -22,5 +22,11 @@ pipeline {
                 sh 'npm test'
             }
         }
+        stage('Deploying') {
+            steps {
+                echo 'Deploying...'
+                sh 'node server.js'
+            }
+        }
     }
 }
