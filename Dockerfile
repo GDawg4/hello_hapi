@@ -15,5 +15,5 @@ COPY . .
 EXPOSE 3000
 CMD [ "npm", "start" ]
 
-FROM nginx:1.18
+FROM nginx
 COPY index.html /usr/share/nginx/html
